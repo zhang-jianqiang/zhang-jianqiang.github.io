@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## 文章列表
+
+### [Go语言环境的搭建](go/createGoEnv.md)
 
 You can use the [editor on GitHub](https://github.com/zhang-jianqiang/zhang-jianqiang.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
