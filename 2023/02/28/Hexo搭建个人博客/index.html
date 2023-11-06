@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+
+    
+<script>!function(){var e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,t=localStorage.getItem("use-color-scheme")||"auto";("dark"===t||e&&"light"!==t)&&document.documentElement.classList.toggle("dark",!0)}()</script>
+    
+
+<meta charset="utf-8" >
+
+<title>Hexo搭建个人博客</title>
+<meta name="keywords" content="Hexo搭建个人博客, 长久的幸福就是最丰厚的收入">
+<meta name="description" content="环境准备git安装git下载搜索官网即可
+node安装node安装直接搜索官网即可
+安装Hexo$ npm install hexo -g
+
+安装hexo依赖$ npm install --save hexo-deployer-git
+
+g">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Hexo搭建个人博客">
+<meta property="og:description" content="环境准备git安装git下载搜索官网即可
+node安装node安装直接搜索官网即可
+安装Hexo$ npm install hexo -g
+
+安装hexo依赖$ npm install --save hexo-deployer-git
+
+g">
+
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="/style/main.css">
+
+  <link rel="stylesheet" href="/style/simple-lightbox.min.css"><meta name="generator" content="Hexo 6.3.0"></head>
+  <body>
+    <div id="app" class="main">
+
+<div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://zhang-jianqiang.github.io">
+        <img class="avatar" src="/images/avatar.png" alt="logo" width="32px" height="32px">
+      </a>
+      <a href="https://zhang-jianqiang.github.io">
+        <h1 class="site-title">长久的幸福就是最丰厚的收入</h1>
+      </a>
+    </div>
+    <div class="right">
+        <i class="icon menu-switch icon-menu-outline" ></i>
+    </div>
+  </div>
+</div>
+
+<div class="menu-container" style="height: 0;opacity: 0;">
+<nav class="menu-list">
+  
+    
+      <a href="/" class="menu purple-link">
+        首页
+      </a>
+    
+  
+    
+      <a href="/tags" class="menu purple-link">
+        标签
+      </a>
+    
+  
+    
+      <a href="/archives" class="menu purple-link">
+        归档
+      </a>
+    
+  
+    
+      <a href="/about" class="menu purple-link">
+        关于
+      </a>
+    
+  
+</nav>
+</div>
+
+
+
+  <div class="content-container">
+    <div class="post-detail">
+      
+      <h2 class="post-title">Hexo搭建个人博客</h2>
+      <div class="post-info post-detail-info">
+        <span><i class="icon icon-calendar-outline"></i> 2023-02-28</span>
+        
+      </div>
+      <div class="post-content-wrapper">
+        <div class="post-content">
+          <h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><h3 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h3><p>git下载搜索官网即可</p>
+<h3 id="node安装"><a href="#node安装" class="headerlink" title="node安装"></a>node安装</h3><p>node安装直接搜索官网即可</p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><code class="hljs cmake">$ npm <span class="hljs-keyword">install</span> hexo -g<br></code></pre></td></tr></table></figure>
+
+<h4 id="安装hexo依赖"><a href="#安装hexo依赖" class="headerlink" title="安装hexo依赖"></a>安装hexo依赖</h4><figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">$ npm install <span class="hljs-comment">--save hexo-deployer-git</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="git配置ssh"><a href="#git配置ssh" class="headerlink" title="git配置ssh"></a>git配置ssh</h2><h3 id="生成ssh-key"><a href="#生成ssh-key" class="headerlink" title="生成ssh key"></a>生成<code>ssh key</code></h3><figure class="highlight elixir"><table><tr><td class="code"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>ssh-keygen -t rsa -C <span class="hljs-string">&quot;你的邮箱&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>复制用户目录下.ssh&#x2F;id_rsa.pub下内容到github中添加ssh key</p>
+<h2 id="搭建个人博客"><a href="#搭建个人博客" class="headerlink" title="搭建个人博客"></a>搭建个人博客</h2><h3 id="新建博客"><a href="#新建博客" class="headerlink" title="新建博客"></a>新建博客</h3><figure class="highlight crystal"><table><tr><td class="code"><pre><code class="hljs crystal"><span class="hljs-comment"># 初始化个人博客</span><br><span class="hljs-variable">$ </span>hexo init<br><span class="hljs-comment"># 生成静态网页</span><br><span class="hljs-variable">$ </span>hexo g<br><span class="hljs-comment"># 预览</span><br><span class="hljs-variable">$ </span>hexo s<br></code></pre></td></tr></table></figure>
+
+<h3 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h3><p>github中新建一个仓库，仓库名使用<code>github用户.github.io</code></p>
+<a class="simple-lightbox" href="/image-20230228125439693.png"><img   src="/images/loading.svg" data-src="/image-20230228125439693.png"  alt="image-20230228125439693"   lazyload></a>
+
+<p><code>git pages</code>设置</p>
+<a class="simple-lightbox" href="/image-20230228125647817.png"><img   src="/images/loading.svg" data-src="/image-20230228125647817.png"  alt="image-20230228125647817" style="zoom:50%;"  lazyload></a>
+
+<h3 id="上传本地博客到github"><a href="#上传本地博客到github" class="headerlink" title="上传本地博客到github"></a>上传本地博客到github</h3><p>修改_config.yml</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repository:</span> <span class="hljs-string">git@github.com:zhang-jianqiang/zhang-jianqiang.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></td></tr></table></figure>
+
+<p>repository修改为自己的地址，bracnh修改为自己想要使用的分支</p>
+<figure class="highlight crystal"><table><tr><td class="code"><pre><code class="hljs crystal"><span class="hljs-variable">$ </span>hexo d<br></code></pre></td></tr></table></figure>
+
+<p>此时访问<code>zhang-jianqiang.github.io</code>便能在线看到自己的博客</p>
+
+        </div>
+          
+        <div class="top-div">
+          <ol class="top-box"><li class="top-box-item top-box-level-2"><a class="top-box-link" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87"><span class="top-box-text">环境准备</span></a><ol class="top-box-child"><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#git%E5%AE%89%E8%A3%85"><span class="top-box-text">git安装</span></a></li><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#node%E5%AE%89%E8%A3%85"><span class="top-box-text">node安装</span></a></li><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="top-box-text">安装Hexo</span></a></li></ol></li><li class="top-box-item top-box-level-2"><a class="top-box-link" href="#git%E9%85%8D%E7%BD%AEssh"><span class="top-box-text">git配置ssh</span></a><ol class="top-box-child"><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#%E7%94%9F%E6%88%90ssh-key"><span class="top-box-text">生成ssh key</span></a></li></ol></li><li class="top-box-item top-box-level-2"><a class="top-box-link" href="#%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2"><span class="top-box-text">搭建个人博客</span></a><ol class="top-box-child"><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="top-box-text">新建博客</span></a></li><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0github"><span class="top-box-text">部署到github</span></a></li><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E5%88%B0github"><span class="top-box-text">上传本地博客到github</span></a></li></ol></li></ol>
+        </div>
+          
+      </div>
+    </div>
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+<footer>
+<div class="site-footer">
+  <div class="social-container">
+    
+      
+        <a aria-label="跳转至github" href="https://github.com/zhang-jianqiang" target="_blank">
+          <i class="icon icon-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <a href="https://github.com/f-dong/hexo-theme-minimalism" target="_blank">Theme</a>
+  
+  
+  
+  
+  
+  
+</div>
+</footer>
+
+
+      </div>
+    </div>
+    
+<script id="hexo-configurations"> window.theme_config = {"image":{"lazyload_enable":true,"photo_zoom":"simple-lightbox"}}; window.is_post = true; </script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+  <script src="/js/simple-lightbox.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {new SimpleLightbox('.post-detail .simple-lightbox', {fileExt: false,captionsData:'alt'});});</script></body>
+</html>
+
