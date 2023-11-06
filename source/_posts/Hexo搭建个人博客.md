@@ -53,11 +53,11 @@ $ hexo s
 
 github中新建一个仓库，仓库名使用`github用户.github.io`
 
-<img src="../images\image-20230228125439693.png" alt="image-20230228125439693"  />
+<img src="/image-20230228125439693.png" alt="image-20230228125439693"  />
 
 `git pages`设置
 
-<img src="../images\image-20230228125647817.png" alt="image-20230228125647817" style="zoom:50%;" />
+<img src="/image-20230228125647817.png" alt="image-20230228125647817" style="zoom:50%;" />
 
 ### 上传本地博客到github
 
