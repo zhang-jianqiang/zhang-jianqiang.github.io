@@ -2,7 +2,7 @@
 title: Hexo搭建个人博客
 date: 2023-02-28 12:43:38
 tags:
-
+typora-root-url: ..
 ---
 
 ## 环境准备
@@ -61,6 +61,8 @@ github中新建一个仓库，仓库名使用`github用户.github.io`
 <img src="/images/image-20230228125647817.png" alt="image-20230228125647817" style="zoom:50%;" />
 
 ### 上传本地博客到github
+
+![image-20231108221746463](/images/image-20231108221746463.png)
 
 修改_config.yml
 
